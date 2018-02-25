@@ -1,0 +1,5 @@
+torchvision
+numpy
+scipy
+sklearn
+opencv-python

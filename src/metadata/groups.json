@@ -1,0 +1,51 @@
+[
+    {
+        "bunker_bed": [
+            "ottoman", 
+            "stand"
+        ]
+    }, 
+    {
+        "double_bed": [
+            "ottoman", 
+            "stand", 
+            "table_lamp", 
+            "floor_lamp"
+        ]
+    }, 
+    {
+        "single_bed": [
+            "ottoman", 
+            "stand", 
+            "table_lamp", 
+            "floor_lamp"
+        ]
+    }, 
+    {
+        "tv_stand": [
+            "sofa"
+        ]
+    }, 
+    {
+        "desk": [
+            "chair", 
+            "office_chair"
+        ]
+    }, 
+    {
+        "table": [
+            "chair", 
+            "arm_chair"
+        ]
+    }, 
+    {
+        "dressing_table": [
+            "chair"
+        ]
+    }, 
+    {
+        "drinkbar": [
+            "chair"
+        ]
+    }
+]
