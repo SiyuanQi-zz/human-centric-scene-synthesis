@@ -17,7 +17,7 @@ sudo apt-get install libopencv-dev libcgal-dev libcgal-qt5-dev libboost-all-dev 
 ### Running the sampler
 - Download the following file and save to folder `src/metatdata/`
     - `stats`: https://drive.google.com/file/d/1eTv3QlSqa1Pq9Bm94nbTB0dMwErxn3Ou/view?usp=sharing
-- Modify the paths in the `main` function in `src/cpp/main.cpp`
+- Modify the paths in the `main` function in `src/cpp/main.cpp`.  Make sure your `workspacePath` ends with a slash "/".
 - Build and run the sampler:
 ```cpp
 cd src/cpp
