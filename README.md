@@ -1,17 +1,23 @@
 # CVPR2018 - Human-centric Indoor Scene Synthesis Using Stochastic Grammar
 
-## Requirements
+## Running in Virtual Machine
+Tested with VMWare workstation 14.1.1. VirtualBox should also work
+https://drive.google.com/file/d/12hRpv07lvorx9-Yv6fSrMPAECFJlxWHm/view?usp=sharing
+Login password: cvpr
+
+
+## Compile from Source
+### Requirements
 Tested in Ubuntu 16.04
 - OpenCV, Boost library, CGAL, Eigen
 ```
 sudo apt-get install libopencv-dev libcgal-dev libcgal-qt5-dev libboost-all-dev libeigen3-dev
 ```
 
-## Instructions
 ### Running the sampler
 - Download the following file and save to folder `src/metatdata/`
     - `stats`: https://drive.google.com/file/d/1eTv3QlSqa1Pq9Bm94nbTB0dMwErxn3Ou/view?usp=sharing
-- Modify the paths in the `main` function in `src/cpp/main.cpp`
+- Modify the paths in the `main` function in `src/cpp/main.cpp`.  Make sure your `workspacePath` ends with a slash "/".
 - Build and run the sampler:
 ```cpp
 cd src/cpp
