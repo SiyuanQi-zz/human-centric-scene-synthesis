@@ -62,6 +62,15 @@ def plot_affordance(paths):
 
 
 # ============================= Plot Sampling Results =============================
+def plot_furniture(furniture, ax, name=""):
+    rectangle = np.array(furniture)
+    center = np.mean(rectangle, axis=0)
+    plt.text(center[0], center[1], name)
+    rectangle = np.vstack((rectangle, rectangle[0, :]))
+    polygon = matplotlib.patches.Polygon(rectangle, fill=True, zorder=2, facecolor='slategray', edgecolor='k')
+    ax.add_patch(polygon)
+
+
 def plot_sample(paths):
     for room_type in os.listdir(os.path.join(paths.tmp_root, 'samples')):
         sample_folder = os.path.join(paths.tmp_root, 'samples', room_type, 'json')
@@ -69,8 +78,6 @@ def plot_sample(paths):
         # plot_folder = os.path.join(paths.tmp_root, 'samples', room_type, 'figures')
         if not os.path.exists(plot_folder):
             os.makedirs(plot_folder)
-        if not os.path.exists(os.path.join(plot_folder, 'transparent')):
-            os.makedirs(os.path.join(plot_folder, 'transparent'))
 
         for sample_json in sorted(os.listdir(sample_folder)):
             print sample_json

@@ -1,5 +1,7 @@
 # CVPR2018 - Human-centric Indoor Scene Synthesis Using Stochastic Grammar
 
+The algorithm is described in a [CVPR 2018 paper](http://web.cs.ucla.edu/~syqi/publications/cvpr2018synthesis/cvpr2018synthesis.pdf).
+
 ## Running in Virtual Machine
 Tested with VMWare workstation 14.1.1. VirtualBox should also work
 https://drive.google.com/file/d/12hRpv07lvorx9-Yv6fSrMPAECFJlxWHm/view?usp=sharing

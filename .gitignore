@@ -1,4 +1,5 @@
 tmp/
+venv/
 *.pdf
 
 # Large files
