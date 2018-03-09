@@ -153,8 +153,8 @@ namespace FurnitureArranger {
     }
 
     bool Room::object_i_on_j(size_t i, size_t j) const {
-        double distance = _furnitureList[i].get_translation()(2) -
-                          (_furnitureList[j].get_translation()(2) + _furnitureList[j].get_size()(2));
+        double distance = _furnitureList[i].get_translation()(1) -
+                          (_furnitureList[j].get_translation()(1) + _furnitureList[j].get_size()(1));
         if (distance > 0.1) {
             // The vertical distance between the bottom surface of object i
             // and top surface of object j is too far
