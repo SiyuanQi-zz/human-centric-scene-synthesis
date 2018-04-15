@@ -1,13 +1,13 @@
 # CVPR2018 - Human-centric Indoor Scene Synthesis Using Stochastic Grammar
 
-The algorithm is described in a [CVPR 2018 paper](http://web.cs.ucla.edu/~syqi/publications/cvpr2018synthesis/cvpr2018synthesis.pdf).
+The algorithm is described in a [CVPR 2018 paper](http://web.cs.ucla.edu/~syqi/publications/cvpr2018synthesis/cvpr2018synthesis.pdf) ([supplementary materials](http://web.cs.ucla.edu/~syqi/publications/cvpr2018synthesis/cvpr2018synthesis_supplementary.pdf)). 
 
 ## Running in Virtual Machine
 Tested with VMWare workstation 14.1.1. VirtualBox should also work
 https://drive.google.com/file/d/12hRpv07lvorx9-Yv6fSrMPAECFJlxWHm/view?usp=sharing
 Login password: cvpr
 
-
+***
 ## Compile from Source
 ### Requirements
 Tested in Ubuntu 16.04
@@ -16,6 +16,7 @@ Tested in Ubuntu 16.04
 sudo apt-get install libopencv-dev libcgal-dev libcgal-qt5-dev libboost-all-dev libeigen3-dev
 ```
 
+***
 ### Running the sampler
 - Download the following file and save to folder `src/metatdata/`
     - `stats`: https://drive.google.com/file/d/1eTv3QlSqa1Pq9Bm94nbTB0dMwErxn3Ou/view?usp=sharing
@@ -29,12 +30,19 @@ make -j8
 ./cpp/cpp 0
 ```
 - The sampled results are saved as txt and json files in `tmp/samples'. The txt files can be opened and viewed by [RoomArranger](http://www.roomarranger.com/) (free to use on Linux).
+    1. Open RoomArranger (tested on 9.4.1), click "Start New Project" -> "OK".
+    2. Click "Project" -> "Import" -> "Object Listing", and select the sample txt file you want to visualize as "Source".
+    3. Check the box of "Column Headings". You should see a change of "Assign attributes". Click "OK".
+    4. The sample file should be loaded by now. You can change the room size to match the sampled room size. The sampled room is represented by a box like other objects, and you can see its size by click on it. The room size can be changed by clicking on "Project Properties" on the tool bar or pressing ctrl+T.
 
+
+***
 ### Visualizing the results
 - Change the paths in `src/python/config.py`
 - Run `src/python/visualize_activity.py`. The visualization results will be saved in 'tmp/figures'.
 
 
+***
 If you find this code useful, please cite our work with the following bibtex:
 ```
 @inproceedings{qi2018human,
